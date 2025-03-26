@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import SongEntry from "../components/songEntry";
 
 const List = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <SongEntry />
+    </Container>
+  );
 };
 
 export default List;
