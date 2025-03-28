@@ -2,18 +2,23 @@ import styled from "styled-components";
 import arrow from "../assets/icons/arrow.svg";
 import { useState } from "react";
 
-const songEntry = () => {
-  const [opened, setOpened] = useState<boolean>(false);
-  const [mainTitle, setMainTitle] = useState<boolean>(true);
+interface Props {
+  title: string;
+  artist: string;
+}
+
+const songEntry = ({ title, artist }: Props) => {
+  const [isOpened, setIsOpened] = useState<boolean>(false);
+  const [isMainTitle, setIsMainTitle] = useState<boolean>(true);
 
   return (
-    <Container mainTitle={mainTitle} onClick={() => setOpened(!opened)}>
+    <Container mainTitle={isMainTitle} onClick={() => setIsOpened(!isOpened)}>
       <AlbumCover />
       <TextContainer>
-        <Title>Test</Title>
-        <Artist>Test</Artist>
+        <Title>{title}</Title>
+        <Artist>{artist}</Artist>
       </TextContainer>
-      {mainTitle && <Arrow src={arrow} opened={opened} />}
+      {isMainTitle && <Arrow src={arrow} opened={isOpened} />}
     </Container>
   );
 };
