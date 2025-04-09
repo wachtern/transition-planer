@@ -4,27 +4,43 @@ export const theme = {
       black: "#111111",
       white: "#EEEEEE",
       background: "#2E2E2E",
-      darkGray: "2E2E2E",
-      gray: "4E4E4E",
-      lightGray: "676767",
+      darkGray: "#3E3E3E",
+      gray: "#4E4E4E",
+      lightGray: "#676767",
     },
+    icons : {
+      star: {
+        filled: "gold",
+        empty: "gray",
+      }
+    }
   },
   fontStyles: {
     title: {
       fontFamily: '"Arial", sans-serif',
-      fontSize: "min(5vw, 5vh)",
+      fontSize: "48px",
       color: "#EEEEEE",
       fontWeight: "bold",
     },
-    subtitle: {
+    artist: {
       fontFamily: '"Arial", sans-serif',
-      fontSize: "min(2.5vw, 2.5vh)",
+      fontSize: "48px",
       color: "#EEEEEE",
-      fontWeight: "bold",
     },
     text: {
       fontFamily: '"Arial", sans-serif',
-      fontSize: "min(2vw, 2vh)",
+      fontSize: "48px",
+      color: "#EEEEEE",
+    },
+    transitionTitle: {
+      fontFamily: '"Arial", sans-serif',
+      fontSize: "24px",
+      color: "#EEEEEE",
+      fontWeight: "bold",
+    },
+    transitionText: {
+      fontFamily: '"Arial", sans-serif',
+      fontSize: "20px",
       color: "#EEEEEE",
     },
   },

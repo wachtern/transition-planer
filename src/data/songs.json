@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Song1",
+    "artist": "Artist1",
+    "transitions": {
+      "before": [
+        {
+          "songId": 3,
+          "rating": 5
+        }
+      ],
+      "after": [
+        {
+          "songId": 5,
+          "rating": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Song2",
+    "artist": "Artist2",
+    "transitions": {
+      "before": [],
+      "after": []
+    }
+  },
+  {
+    "id": 3,
+    "title": "Song3",
+    "artist": "Artist3",
+    "transitions": {
+      "before": [],
+      "after": [
+        {
+          "songId": 1,
+          "rating": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Song4",
+    "artist": "Artist4",
+    "transitions": {
+      "before": [],
+      "after": []
+    }
+  },
+  {
+    "id": 5,
+    "title": "Song5",
+    "artist": "Artist5",
+    "transitions": {
+      "before": [
+        {
+          "songId": 1,
+          "rating": 3
+        }
+      ],
+      "after": []
+    }
+  }
+] 
