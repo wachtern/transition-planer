@@ -1,10 +1,19 @@
 import styled from "styled-components";
-import SongEntry from "../components/songEntry";
+import SongEntry from "../components/SongEntry";
+import songsData from "../data/songs.json";
 
 const List = () => {
   return (
     <Container>
-      <SongEntry />
+      {songsData.map((song, index) => (
+        <SongEntry 
+          key={song.id}
+          id={song.id}
+          title={song.title} 
+          artist={song.artist}
+          index={index}
+        />
+      ))}
     </Container>
   );
 };
@@ -12,7 +21,7 @@ const List = () => {
 export default List;
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: ${({ theme }) => theme.colors.general.background};
 `;

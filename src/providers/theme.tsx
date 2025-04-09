@@ -8,6 +8,12 @@ export const theme = {
       gray: "#4E4E4E",
       lightGray: "#676767",
     },
+    icons : {
+      star: {
+        filled: "gold",
+        empty: "gray",
+      }
+    }
   },
   fontStyles: {
     title: {
@@ -24,6 +30,17 @@ export const theme = {
     text: {
       fontFamily: '"Arial", sans-serif',
       fontSize: "48px",
+      color: "#EEEEEE",
+    },
+    transitionTitle: {
+      fontFamily: '"Arial", sans-serif',
+      fontSize: "24px",
+      color: "#EEEEEE",
+      fontWeight: "bold",
+    },
+    transitionText: {
+      fontFamily: '"Arial", sans-serif',
+      fontSize: "20px",
       color: "#EEEEEE",
     },
   },
