@@ -24,14 +24,27 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <ContentContainer>
-        {renderPage()}
-      </ContentContainer>
-      <Navigationbar currentPage={page} changePage={setPage} />
+      <AppContainer>
+        <ContentContainer>
+          {renderPage()}
+        </ContentContainer>
+        <Navigationbar currentPage={page} changePage={setPage} />
+      </AppContainer>
     </ThemeProvider>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+`;
+
 const ContentContainer = styled.div`
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px;
 `;

@@ -22,6 +22,8 @@ export default List;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   background: ${({ theme }) => theme.colors.general.background};
+  padding: 20px;
+  box-sizing: border-box;
 `;

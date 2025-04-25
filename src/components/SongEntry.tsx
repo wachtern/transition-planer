@@ -1,6 +1,6 @@
+import { useState } from "react";
 import styled from "styled-components";
 import arrow from "../assets/icons/arrow.svg";
-import { useState } from "react";
 import songsData from "../data/songs.json";
 
 interface Props {
@@ -180,6 +180,7 @@ const RatingContainer = styled.div`
 const Star = styled.span<{ filled: boolean }>`
   color: ${props => props.filled ? props.theme.colors.icons.star.filled : props.theme.colors.icons.star.empty};
   margin-left: 2px;
+  font-size: ;
 `;
 
 const NoTransitions = styled.div`
