@@ -8,6 +8,10 @@
         {
           "songId": 3,
           "rating": 5
+        },
+        {
+          "songId": 2,
+          "rating": 2
         }
       ],
       "after": [
