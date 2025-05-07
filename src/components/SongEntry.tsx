@@ -180,7 +180,7 @@ const RatingContainer = styled.div`
 const Star = styled.span<{ filled: boolean }>`
   color: ${props => props.filled ? props.theme.colors.icons.star.filled : props.theme.colors.icons.star.empty};
   margin-left: 2px;
-  font-size: ;
+  font-size: 20px;
 `;
 
 const NoTransitions = styled.div`
